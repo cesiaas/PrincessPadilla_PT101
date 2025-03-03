@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaVo - Milk Tea Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            background-image: url(https://media-hosting.imagekit.io//c84a19d384b34557/a2027a597ed11039e70bb1a66c0b0da8.jpg?Expires=1835005614&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mVtv3XMDWhDNg69WNgBqFAieWATstUG5XJE~g3wbWzKc4hPkJ5WZ9gh2UUCQqhK9P27Yi3DNUY8ZGBpsS8y4oDNYVQFJjbEt6HSPgi6~7QWHJ3m-FLsjE7U7BTPrxZPvCw21pHAsG3lZ9Ff9xGgDVEeTjiXxQmo7-lYZ2fX6YjCOgtKbt7wYnClmkzVM2oucrW5DwuS1-79UCg25IcHD183DAEeJzqh1BGG2NQiu-bLRi-~Ys2mP8xJgZp4Q0t1QIw0YECG~kuBeh1wktMdFzCir0x9QR37yZnimXLbwID4nMg7cka2YyGr5rnILHFwh2y2g7lfkcZQn6hTGN06VQQ__);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        nav {
+           
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .menu-item h2 {
+            margin: 0;
+            color: #555;
+            font-size: 1.5rem;
+        }
+
+        .menu-item p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 1.1rem;
+        }
+
+        .menu-item .price {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+
+        .about-section, .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #b67272;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu-item img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <img src="https://media-hosting.imagekit.io//cb9daa5cad2d4619/322884416_5820892954661721_534712322915789192_n.jpg?Expires=1835004350&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rsk3zUOQl8l86GX4tyzN9RQE5ay1op~Zp-ZLAOaArnpg3~GjzQpw3lY6Xu0u~xV8AOv8qCyAhQEWwy7spuWFaSZlWhGdj4DAVo22mgGtNRci7QgNx2A1Y65xQpTBhqnGfTF1YsDWbInIXDYJu8Fd6TV-87RGzBskheJKjbDyzR1~C32C57gh87EoJ-ua-6LML5pYf0WIq4VUKU0bXO5LzQ2d3fW1ChUxCsSkiudZjMv5DsL6bqlmndyhjgAKTy8gAphGYYGSeBRpxEVKUqPcvPlxA2Y2qL8ZdpmlBOvyCuM36vk3mxKBZ69rIXCB~mVx76Y-DtCuKNGSeEkdDrtD1Q__" alt="TeaVo Logo">
+        </div>
+
+        <h1>TeaVo Milktea</h1>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
+            Welcome to TeaVo Milktea, your go-to destination for delicious and refreshing milk tea beverages. Our menu features a wide range of flavors, from classic favorites to unique blends, all crafted with the finest ingredients. Whether you're a milk tea enthusiast or trying it for the first time, we have something for everyone. Come and experience the perfect balance of taste and quality at TeaVo Milktea!
+        </p>
+
+        <div class="menu-item">
+            <img src="https://media-hosting.imagekit.io//8f9ea074e38b4963/inJoy-Chocolate-Milk-Tea-Drinks.png?Expires=1835007413&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=CBKoL~sOnx8FJTnuxkhq5ErzAxkRkub8xyUK-y2luYUDRylJk8uQr9vtsollS5SWhLDw-K9Fxfun7DxdiGiZzohpPIA-vjBQtLOUxbONhpJboN0-ujK-gHk3ty0KJROHGfYERevFDFs9fVRSEPu3b5Lex3lGamrEQUC8dbUGzGg0vG-B0szaspt~Iq7SFjjPs7HBz3ChkQ0-uV3F12nTBTNXjFugWF8wkYJZSVgcL9sIjxeBvsAaUD3lRKkUGezZMYikBHGTcDUtm6KQ2d06FGu4KhhfyTIwZJ5Kcn32kga-AaAbYKoCcJdsSuWA35Vi9qzvRg1Z4KzC1CyWdZ0V0A__" alt="Chocolate Milk Tea">
+            <div>
+                <h2>Chocolate Milk Tea</h2>
+                <p>Rich and creamy chocolate milk tea, perfect for chocolate lovers.</p>
+                <p class="price">₱65</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://media-hosting.imagekit.io//6f30c69520e140c3/matcha.jpg?Expires=1835007467&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TBgE59y80LfVaF8Y1preDODkvLb6is8ak5j-2aMMaMWO2ZrrT8WZrSZf9kzX5EupR9KWx21DBiqDnV1p98EAk-4unJHXPdcvjJpxmOe~6y6dS26wSBD8DvjkmCA8g6VMq5G5~f5-BflLRI1dxxr6xwTlotRwSroJmMCScvFbzB9FBeflxLUxy4pPuszX7D0WTJrlDY7VOT28-uGLaebWvTeXH3~OFcEL9CJ8PkqzrSREGeYwd7BMcmtBd7TKBe3MSYS-nDMidCgNZXgJSMbtnXlhIqZ0-eshkevsSRjA6Bugku0tywEMgjhi47XRiJuOOpalvHi9IVB-cSql~VgPBQ__" alt="Matcha Milk Tea">
+            <div>
+                <h2>Matcha Milk Tea</h2>
+                <p>Experience the unique and refreshing taste of matcha combined with creamy milk tea.</p>
+                <p class="price">₱65</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://media-hosting.imagekit.io//a766397a8694452e/taro.jpg?Expires=1835007512&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=dR3DXiOoL-pwcr1kdkIDv6GPWeLQUJqXFIG9LWIlJ~crv2ELbyUDXiTypIFqaBvusIvxxH3FBOMMyFY50v5fWOSyJfp20mL8srjll5I0poMRqaqoai6bpo74GOatP15vUmTCqNVwU4361Gu491-EahHj7gsOKuikz3K6KVJgrf4XJMhlO05FRr9Ff20QEUl5j-zljpJZ2EAL0VS7iMqFqQPzzjmkARGdPxG0hF1qzdXijJEvl7SDup95CPVXnF-NebRnxgPOvI3E5zYoDAqgZ2VWl5ouDYyojjx6TGpC6RGizRrmFgCo60zJhvhaEDOwKpeOXP44RouyT0ZBMsk-LQ__" alt="Taro Milk Tea">
+            <div>
+                <h2>Taro Milk Tea</h2>
+                <p>Enjoy the sweet and earthy flavor of taro milk tea.</p>
+                <p class="price">₱65</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://media-hosting.imagekit.io//74d8c32f5f2e422a/redv.jpg?Expires=1835007561&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ZMq8ArZFkkHCqvjayKfwLga-Zgu9u8b3zWQ4pFQ-tb3senSzsAxRr71jdHQcokZ8Hqf9vdUUHztLzvl47xAyDymaWQFnlAezrChEHenjKhKx17UBInVjlPh9Nq0y5UClF16xVfjYV9FOnajmbs5DHXbIgK-4yBnPu6Ps~4XY9YdUtC1V9u07kiEixSYAm9FRpMO7Q0gGRO9rwDHt1VzSn95NuBbuLvqjXiscMlUyhTISD8R-h3xvLQne21mWJOJN-S9~yfmv2XsR-WzglO8pgYEjKAwmRo7lNzWvux0R2YUdQXfXDwE2UYQBTwZ3BI8GtKw6yzdF7R5Cl2YQJwX3FA__" alt="Red Velvet Milk Tea">
+            <div>
+                <h2>Red Velvet Milk Tea</h2>
+                <p>Indulge in the rich and creamy flavor of red velvet milk tea.</p>
+                <p class="price">₱65</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://media-hosting.imagekit.io//bed21c05bb45404d/injoy_wintermelon_milk_tea_500g__instant_powdered_milk_tea_drink_1570891276_02d2dcf41_progressive.jpg?Expires=1835007684&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=DH82W-Mb~4BoSehz-BKL9G1~alfmemvtudUHfMCj~vxZRl6nMroDCU~TsumM6ZnDkkVPN1UtSQjlPHWVCQQ3LsTvBvRDc1OKlHEm1m0fmrOOihvL74X2JD~1rCPd3BtuMb-TG~J2-zUXafScB12KPenvUhgWb1EDcGT8jP0DjdKfvyJ65eCK3tVeV7p4YXfhpao-XLhN-BVWEwCp266stXMSs6dR8lNWZppX51GGgrJJK-WulK9C-N8to0JwrAdugwcFr~WrfaMMS5Ygk4KMisAXmSxhUsD~gq6ly3BsqcGiPwMtubuuBIzQ~N1C7cXQWbKxRbNw2wCyW~6CnGBliQ__" alt="Wintermelon Milk Tea">
+            <div>
+                <h2>Wintermelon Milk Tea</h2>
+                <p>Experience the refreshing and aromatic flavor of wintermelon milk tea.</p>
+                <p class="price">₱65</p>
+            </div>
+        </div>
+
+        <div id="about" class="about-section">
+            <h1>About Us</h1>
+            <p>TeaVo is a milk tea shop that offers a variety of milk tea flavors. We are committed to providing our customers with the best milk tea experience. Our milk teas are made from high-quality ingredients and are freshly brewed every day. We also offer customizable sugar and ice levels to suit your taste preferences. Visit us today and enjoy a refreshing cup of milk tea!</p>
+        </div>
+
+        <div id="contact" class="contact-section">
+            <h1>Contact Us</h1>
+            <p>For inquiries and feedback, you can reach us through the following:</p>
+            <p>Email: <a href="mailto:princesspadillae@gmail.com">princesspadillae@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 TeaVo Milktea. All rights reserved.</p>
+        <p>Follow us on <a href="https://www.facebook.com/cesesia/">Facebook</a> | <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fcesia_pdll%3Figsh%3DMW8wbndwaTQ4aDUxZA%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2KS9k9l4bKeh25_PBYDUCVfO35Z0yBJUoT_Nsilk1FxvEmifUrvpe22zE_aem_JxMQ9VasOtIxAh9a13sE-g&h=AT2YfxiqUa8oZbN1_3nTDn5tkBF237sJIvCe57mWnzX07nvHcemNPdT1Y539LaYtIZ7cD8jXKXNLgA4BjVSJgDaF9Mahsrw6b72JixpUAB1y3VJkcqfKY9lmirhjykxE0PdrSw">Instagram</a></p>
+    </footer>
+</body>
+</html>
